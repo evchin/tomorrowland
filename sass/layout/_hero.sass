@@ -1,0 +1,37 @@
+.hero
+  background: linear-gradient(to right, $main, $secondary)
+  color: $text-inverse
+  padding-top: 8em
+  padding-bottom: 8em
+  text-align: center
+
+  @media(min-width: 725px)
+    text-align: left
+    padding-bottom: 0
+    height: 80vmin
+    min-height: 800px
+
+.hero-text
+  @media(min-width: 930px)
+    margin-top: 10vmax
+    display: flex
+    flex-direction: column
+
+    .hero-btns
+      display: flex
+      flex-direction: column
+
+  a
+    text-align: center
+    width: 13em
+
+.hero-img-grid
+  flex-wrap: nowrap
+
+.hero-img-container
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+  .hero-img
+    width: 100%
